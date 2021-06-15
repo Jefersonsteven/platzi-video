@@ -1,0 +1,37 @@
+$font-primary: 'Roboto', sans-serif;
+$color-primary: #725AB8;
+$color-white: #F3F3F3;
+$color-dark: #161616;
+
+@mixin ajustar-imagen {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $font-primary;
+}

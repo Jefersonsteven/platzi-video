@@ -1,0 +1,29 @@
+.lista1-container {
+    width: 100%;
+    padding: 10px 0 30px 0;
+    background-color: #f3f3f3;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 0 0 20px 20px;
+    }
+    &__videos {
+        display: flex;
+        margin-left: 20px;
+    }
+        &__videos--1 {
+            width: 330px;
+            height: 185.6px;
+            background-image: url(/public/assets/img/Lista1/platzi1.png);
+            @include ajustar-imagen;
+            cursor: pointer;
+        }
+        &__videos--1-hover {
+            // display: none;
+            width: 330px;
+            height: 185.6px;
+            background-color: rgba( $color-dark, 50%);
+        }
+}

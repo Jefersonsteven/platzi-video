@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 10px 0;
+    position: relative;
+    width: 100vw;
+    background: $color-primary;
+}
+
+.logo-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    &__isotipo {
+        width: 55px;
+        height: 55px;
+        margin: 0 10px 0 10px;
+        background-image: url(/public/assets/icons/logo-circle.png);
+        @include ajustar-imagen;
+    }
+    &__logotipo {
+        color: $color-white;
+    }
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__user {
+        z-index: 3;
+        width: 28px;
+        height: 28px;
+        background-image: url(/public/assets/icons/user.png);
+        @include ajustar-imagen;
+    }
+    &__menu-perfil {
+        z-index: 3;
+        margin: 0 20px 0 15px;
+        cursor: pointer;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: $color-white;
+    }
+    &__menu-perfil:hover {
+        text-decoration: underline;
+    }
+
+
+    .nav-content--menu{
+        display: none;
+        background-color: $color-primary;
+        position: absolute;
+        z-index: 1;
+        padding-top: 80px;
+        top: 0px;
+        right: 0px;
+        li {
+            margin: 20px;
+            text-align: right;
+            font-weight: 400;
+        }
+        li a {
+            color: $color-white;
+        }
+    }
+    .nav-content__menu-perfil:hover ~ .nav-content--menu, .nav-content--menu:hover {
+        display: block;
+    }
+}
+
+
+
