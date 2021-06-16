@@ -184,6 +184,22 @@ header {
   background-image: url(/public/assets/img/Lista1/platzi4.png);
 }
 
+.imagen11 {
+  background-image: url(/public/assets/img/Lista2/platzi1.jpg);
+}
+
+.imagen22 {
+  background-image: url(/public/assets/img/Lista2/platzi2.jpg);
+}
+
+.imagen33 {
+  background-image: url(/public/assets/img/Lista2/platzi3.jpg);
+}
+
+.imagen44 {
+  background-image: url(/public/assets/img/Lista2/platzi4.jpg);
+}
+
 .lista-container__videos--1-hover {
   display: none;
   width: 330px;
