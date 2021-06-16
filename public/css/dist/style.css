@@ -17,6 +17,8 @@ a:hover {
 }
 
 html {
+  height: 100vh;
+  width: 100vw;
   font-size: 62.5%;
 }
 
@@ -31,7 +33,7 @@ header {
   justify-content: space-between;
   padding: 15px 0 10px 0;
   position: relative;
-  width: 100vw;
+  width: 100%;
   background: #725AB8;
 }
 
@@ -125,32 +127,113 @@ header {
   border-radius: 10px;
 }
 
-.lista1-container {
+.container-listas {
   width: 100%;
-  padding: 10px 0 30px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-container {
+  width: 100%;
+  padding: 10px 20px 30px 20px;
   background-color: #f3f3f3;
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.lista1-container__title {
+.lista-container__title {
   font-size: 2.4rem;
   font-weight: 700;
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 0;
 }
-.lista1-container__videos {
+.lista-container__videos {
   display: flex;
-  margin-left: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.lista1-container__videos--1 {
+.lista-container__videos--1 {
   width: 330px;
   height: 185.6px;
-  background-image: url(/public/assets/img/Lista1/platzi1.png);
+  border-radius: 15px;
+  margin-bottom: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
-.lista1-container__videos--1-hover {
+
+.lista-container2 {
+  width: 100%;
+  padding: 10px 20px 30px 20px;
+  background-color: #f3f3f3;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imagen1 {
+  background-image: url(/public/assets/img/Lista1/platzi1.png);
+}
+
+.imagen2 {
+  background-image: url(/public/assets/img/Lista1/platzi2.png);
+}
+
+.imagen3 {
+  background-image: url(/public/assets/img/Lista1/platzi3.png);
+}
+
+.imagen4 {
+  background-image: url(/public/assets/img/Lista1/platzi4.png);
+}
+
+.lista-container__videos--1-hover {
+  display: none;
   width: 330px;
   height: 185.6px;
-  background-color: rgba(22, 22, 22, 0.5);
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(22, 22, 22, 0.7);
+}
+
+.lista-container__videos--1:hover .lista-container__videos--1-hover, .lista-container__videos--1-hover:hover {
+  display: flex;
+}
+
+.lista-container__videos--controls {
+  display: flex;
+}
+
+.videos--controls__play {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-image: url(/public/assets/icons/mas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.videos--controls__plus {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-image: url(/public/assets/icons/tocar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lista-container__videos--title {
+  color: #F3F3F3;
+  margin: 10px;
+}
+
+.lista-container__videos--subtitles {
+  color: #F3F3F3;
+  display: flex;
+  margin: 10px;
+}
+.lista-container__videos--subtitles p:nth-child(1) {
+  margin-right: 20px;
 }
